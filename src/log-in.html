@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/imagens/logotipo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/styles/style.log-in.css">
+    <title>Faça login para começar seu aprendizado</title>
+</head>
+<body>
+     <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/index.html"><img src="/imagens/logo.svg" alt="Logo" /></a>
+            </div>
+            <nav class="nav-links">
+                <a href="/index.html">Inicio</a>
+                <a href="courses.html">Cursos</a>
+                <a href="courses.html#plans">Planos GTM</a>
+                <a href="/index.html#banner">Ensine Aqui</a>
+            </nav>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Encontre cursos ministrados por especialistas" />
+            </div>
+            <div class="right-buttons">
+                <a href="cart.html" class="icon-button"><i class="fas fa-shopping-cart"></i></a>
+                <a href="log-in.html" class="login-button">Fazer login</a>
+                <a href="sign-up.html" class="register-button">Registre-se</a>
+                <a href="#" class="icon-button" id="openLanguageModal"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div id="languageModal" class="modal">
+  <div class="modal-content">
+    <button class="close"><i class="fa-regular fa-x"></i></button>
+    <h2 class="lang">Escolha um idioma</h2>
+    <div class="languages">
+      <ul>
+        <li class="langs">English</li>
+        <li class="langs">Deutsch</li>
+        <li class="langs">Español</li>
+        <li class="langs">Français</li>
+        <li class="langs">Bahasa Indonesia</li>
+        <li class="langs">Italiano</li>
+        <li class="langs">日本語</li>
+        <li class="langs">한국어</li>
+        <li class="langs">Nerderlands</li>
+        <li class="langs">Polski</li>
+        <li class="langs"><a href="log-in.html" class="pt">Português</a></li>
+        <li class="langs">Română</li>
+        <li class="langs">Русский</li>
+        <li class="langs">ภาษาไทย</li>
+        <li class="langs">Türkçe</li>
+        <li class="langs">Tiếng Việt</li>
+        <li class="langs">中文(简体)</li>
+        <li class="langs">中文(繁體)</li>
+        <!-- Adicione mais idiomas aqui -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <!-- Área de Login -->
+    <div class="container">
+        <div class="left-panel">
+            <img src="/imagens/overlay.jpeg" alt="" class="background-img">
+            <div class="overlay">
+                <h1>Ainda não se registrou?</h1>
+                <a href="sign-up.html" class="sign-up-button">Criar uma conta</a>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="login-header">
+                <h1><strong>Entre na <span class="highlight">sua conta</span></strong></h1>
+                <p>Preencha os campos abaixo para fazer login em sua conta</p>
+            </div>
+
+            <div class="input-group">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" placeholder="E-mail">
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="senha" placeholder="Senha" oninput="checkSenhaInput()">
+                <button type="button" class="toggle-password" onclick="toggleSenha()" id="toggleSenhaBtn" style="display: none;">
+                    <i class="fa-regular fa-eye"></i>
+                </button>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Lembrar de mim</label>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+
+            <a href="#" class="login-button full">Fazer login</a>
+
+            <div class="separator">
+                <hr><span>Ou</span><hr>
+            </div>
+
+            <ul class="social-buttons">
+                <li><a href="#" class="icon-button full"><i class="fab fa-facebook-f"></i> Fazer login com Facebook</a></li>
+                <li><a href="#" class="icon-button full"><i class="fab fa-google"></i> Fazer login com Google</a></li>
+                <li><a href="#" class="icon-button full"><i class="fab fa-apple"></i> Fazer login com Apple</a></li>
+                <li><a href="#" class="icon-button full"><i class="fab fa-github"></i> Fazer login com GitHub</a></li>
+            </ul>
+
+            <p>Não tem uma conta? <a href="sign-up.html">Crie uma agora mesmo!</a></p>
+        </div>
+    </div>
+</body>
+
+<script src="/script.js"></script>
+</html>

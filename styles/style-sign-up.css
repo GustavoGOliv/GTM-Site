@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 999; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+.pt {
+    text-decoration: none;
+    color: black
+}
+
+li a {
+    display: block;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; 
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.close {
+  float: right;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 4px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+
+.close:hover {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.languages ul {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.languages li {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+  white-space: nowrap;     /* Impede a quebra */
+  overflow: visible;       /* Permite que o texto apareça */
+  text-overflow: unset;    /* Não usa reticências */
+}
+
+.langs:hover {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.lang {
+    margin-bottom: 25px;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+a {
+    --tw-text-opacity: 1;
+    color: rgb(74 32 255 / var(--tw-text-opacity));
+    text-decoration: none;
+}
+
+.nav-container {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1c1d1f;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgba(99, 99, 240, 0.996);
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 8px 15px;
+    background-color: #fff;
+    max-width: 1000px;
+}
+
+.search-box i {
+    color: #888;
+    margin-right: 8px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon-button {
+    color: #1c1d1f;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.icon-button:hover {
+    background-color: #f2f2f2;
+}
+
+.login-button,
+.register-button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.login-button {
+    border: 1px solid #4141bafe;
+    color: rgba(65, 65, 186, 0.996);
+    background: #fff;
+}
+
+.login-button:hover {
+    background-color: #b4b4f5fe;
+}
+
+.register-button {
+    background-color: rgba(65, 65, 186, 0.996);
+    color: #fff;
+    border: none;
+}
+
+.register-button:hover {
+    background-color: #4141bafe;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.left-panel {
+    position: relative;
+    width: 30%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.overlay {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+}
+
+.overlay h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sign-up-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 14px 30px;
+    background-color: #4141ba;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.right-panel {
+    width: 70%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.login-header p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #5d5df5;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 15px 15px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.input-group i {
+  color: #888;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Input ocupa todo o espaço restante */
+.input-group input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  padding-right: 35px;
+  background: transparent;
+}
+
+/* Botão de ver senha */
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+  display: none;
+}
+
+/* Grupo específico para senha */
+.password-group input {
+  padding-right: 40px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 100%;
+    margin: 0 auto 15px auto;
+}
+
+.login-button.full {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #4141ba;
+    border-radius: 30px;
+    font-size: 18px;
+    max-width: 220px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    gap: 10px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.separator hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.separator span {
+    font-size: 14px;
+    color: #888;
+}
+
+.social-buttons {
+    padding: 0;
+    list-style: none;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.social-buttons li {
+    margin-bottom: 8px;
+}
+
+.icon-button.full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4141ba;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+}
+
+.icon-button.full i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Responsivo (opcional) */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        display: none;
+    }
+
+    .right-panel {
+        width: 100%;
+        padding: 40px 20px;
+    }
+}

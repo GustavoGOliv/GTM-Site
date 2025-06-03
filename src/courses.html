@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/styles/style-courses.css">
+  <title>GTM Cursos | Aprenda conosco agora</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="shortcut icon" href="/imagens/logotipo.svg" type="image/x-icon">
+</head>
+<body>
+  <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/index.html"><img src="/imagens/logo.svg" alt="Logo" /></a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="/index.html">Inicio</a>
+                <a href="courses.html">Cursos</a>
+                <a href="courses.html#plans">Planos GTM</a>
+                <a href="/index.html#banner">Ensine Aqui</a>
+            </nav>
+
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Encontre cursos ministrados por especialistas" />
+            </div>
+
+            <div class="right-buttons">
+                <a href="cart.html" class="icon-button"><i class="fas fa-shopping-cart"></i></a>
+                <a href="log-in.html" class="login-button">Fazer login</a>
+                <a href="sign-up.html" class="register-button">Registre-se</a>
+                <a href="#" class="icon-button" id="openLanguageModal"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </header>
+    <div id="languageModal" class="modal">
+  <div class="modal-content">
+    <button class="close"><i class="fa-regular fa-x"></i></button>
+    <h2 class="lang">Escolha um idioma</h2>
+    <div class="languages">
+      <ul>
+        <li class="langs">English</li>
+        <li class="langs">Deutsch</li>
+        <li class="langs">Español</li>
+        <li class="langs">Français</li>
+        <li class="langs">Bahasa Indonesia</li>
+        <li class="langs">Italiano</li>
+        <li class="langs">日本語</li>
+        <li class="langs">한국어</li>
+        <li class="langs">Nerderlands</li>
+        <li class="langs">Polski</li>
+        <li class="langs"><a href="index.html" class="pt">Português</a></li>
+        <li class="langs">Română</li>
+        <li class="langs">Русский</li>
+        <li class="langs">ภาษาไทย</li>
+        <li class="langs">Türkçe</li>
+        <li class="langs">Tiếng Việt</li>
+        <li class="langs">中文(简体)</li>
+        <li class="langs">中文(繁體)</li>
+        <!-- Adicione mais idiomas aqui -->
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="text3">
+    <h1>Todas as habilidades de que você precisa em um só lugar</h1>
+    <p>Desde habilidades essenciais até temas técnicos, a GTM apoia seu desenvolvimento.</p>
+  </div>
+  <div class="categoria1">
+    <div class="categories">
+    <button class="category-btn active" data-category="chatgpt">ChatGPT</button>
+    <button class="category-btn" data-category="python">Python</button>
+    <button class="category-btn" data-category="ai">Inteligência Artificial</button>
+  </div>
+
+  <div class="carousel-wrapper">
+  <button class="nav-button" id="leftBtn">&#8249;</button>
+  <div id="courses" class="courses-grid"></div>
+  <button class="nav-button" id="rightBtn">&#8250;</button>
+</div>
+
+  <div class="show-all">
+    <a href="#">Mostrar todos os cursos da categoria</a>
+  </div>
+  </div>
+      
+  <div class="cursos-box">
+      <h1>Cursos em alta</h1>
+    <div class="cursos-grid">
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 1" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">Curso de JavaScript Moderno</p>
+        <p class="curso-instrutor">Paulo Lima</p>
+        <p class="curso-avaliacao">⭐ 4.9 (1.100 avaliações)</p>
+        <p class="curso-preco">R$ 79,90</p>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 2" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">Excel Avançado do Zero</p>
+        <p class="curso-instrutor">Fernanda Souza</p>
+        <p class="curso-avaliacao">⭐ 4.8 (760 avaliações)</p>
+        <p class="curso-preco">R$ 69,90</p>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 3" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">Figma para Designers UI/UX</p>
+        <p class="curso-instrutor">Lucas Martins</p>
+        <p class="curso-avaliacao">⭐ 4.8 (1.700 avaliações)</p>
+        <p class="curso-preco">R$ 59,90</p>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 4" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">WordPress com Elementor</p>
+        <p class="curso-instrutor">Aline Rocha</p>
+        <p class="curso-avaliacao">⭐ 4.9 (25.500 avaliações)</p>
+        <p class="curso-preco">R$ 89,90</p>
+      </div>
+    </div>
+  </div>
+
+  <h1>Cursos para <b class="h1.2">você</b></h1>
+  <div class="cursos-grid2">
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 1" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">Curso de JavaScript Moderno</p>
+        <p class="curso-instrutor">Paulo Lima</p>
+        <p class="curso-avaliacao">⭐ 4.9 (1.200 avaliações)</p>
+        <p class="curso-preco">R$ 79,90</p>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 2" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">Excel Avançado do Zero</p>
+        <p class="curso-instrutor">Fernanda Souza</p>
+        <p class="curso-avaliacao">⭐ 4.8 (980 avaliações)</p>
+        <p class="curso-preco">R$ 69,90</p>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 3" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">Figma para Designers UI/UX</p>
+        <p class="curso-instrutor">Lucas Martins</p>
+        <p class="curso-avaliacao">⭐ 4.7 (1.500 avaliações)</p>
+        <p class="curso-preco">R$ 59,90</p>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img src="https://via.placeholder.com/300x140" alt="Curso 4" class="curso-img">
+      <div class="curso-detalhes">
+        <p class="curso-titulo">WordPress com Elementor</p>
+        <p class="curso-instrutor">Aline Rocha</p>
+        <p class="curso-avaliacao">⭐ 5.0 (2.100 avaliações)</p>
+        <p class="curso-preco">R$ 89,90</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="pricing-box" id="plans">
+    <div class="pricing-header">
+    <h1>Acelere o crescimento – para você ou sua organização</h1>
+    <p>Alcance metas mais rapidamente com um dos nossos planos ou programas. Experimente gratuitamente hoje mesmo ou fale com a equipe de vendas para saber mais.</p>
+  </div>
+
+  <div class="pricing-container">
+    <div class="plan">
+      <h2>Plano Individual</h2>
+      <small>Para você</small>
+      <p class="plan-price">A partir de R$ 33,33/mês</p>
+      <button class="plan-button"><a href="sign-up.html">Experimente grátis</a></button>
+      <ul>
+        <li>Acesso a mais de 15.000 cursos</li>
+        <li>Preparação para certificação</li>
+        <li>Recomendações personalizadas</li>
+        <li>Exercícios com IA</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Plano Team</h2>
+      <small>Para sua equipe</small>
+      <p class="plan-price">R$ 169,00/mês por usuário</p>
+      <button class="plan-button"><a href="sign-up.html">Experimente grátis</a></button>
+      <ul>
+        <li>Acesso a mais de 13.000 cursos</li>
+        <li>Preparação para certificação</li>
+        <li>Recomendações com foco</li>
+        <li>Exercícios com IA</li>
+        <li>Relatórios de análise</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Plano Enterprise</h2>
+      <small>Para toda a organização</small>
+      <p class="plan-price">Entre em contato para preços</p>
+      <button class="plan-button"><a href="sign-up.html">Solicitar demonstração</a></button>
+      <ul>
+        <li>Acesso a mais de 30.000 cursos</li>
+        <li>Equipe de sucesso do cliente</li>
+        <li>Conteúdo personalizado</li>
+        <li>Treinamento técnico</li>
+        <li>Serviços estratégicos</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Sobre nós</h4>
+      <ul>
+        <li><a href="#">Quem somos</a></li>
+        <li><a href="#">Carreiras</a></li>
+        <li><a href="#">Fale conosco</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Investidores</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Conheça a GTM</h4>
+      <ul>
+        <li><a href="#">Baixe o aplicativo</a></li>
+        <li><a href="/index.html">Ensine aqui</a></li>
+        <li><a href="/src/courses.html#plans">Planos e preços</a></li>
+        <li><a href="#">Afiliado</a></li>
+        <li><a href="#">Ajuda e suporte</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Jurídico e acessibilidade</h4>
+      <ul>
+        <li><a href="#">Declaração de acessibilidade</a></li>
+        <li><a href="#">Política de privacidade</a></li>
+        <li><a href="#">Mapa do site</a></li>
+        <li><a href="#">Termos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <a href="/index.html"><img src="/imagens/logo.svg" alt="Logo GTM" class="footer-logo" /></a>
+      <p>© 2025 GTM, Inc.</p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const courses = {
+      chatgpt: [
+        {
+          title: "ChatGPT Plus Completo 2025",
+          author: "Paulo Andrade",
+          rating: "⭐ 4.7 (1.538)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/6a00ff/ffffff?text=Curso+1"
+        },
+        {
+          title: "Domine ChatGPT e IA",
+          author: "Diego Davila",
+          rating: "⭐ 4.6 (1.000.000+)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/f56a00/ffffff?text=Curso+2"
+        },
+        {
+          title: "Marketing com ChatGPT",
+          author: "Diego Davila",
+          rating: "⭐ 4.5 (500.000+)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/2299ff/ffffff?text=Curso+3"
+        },
+        {
+          title: "Guia Completo ChatGPT 4",
+          author: "Matheus Starglehn",
+          rating: "⭐ 4.9 (700)",
+          price: "R$ 171,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/3333cc/ffffff?text=Curso+4"
+        },
+        {
+          title: "Curso Extra ChatGPT",
+          author: "Autor X",
+          rating: "⭐ 4.5 (200)",
+          price: "R$ 59,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/dd2222/ffffff?text=Curso+5"
+        }
+      ],
+      python: [
+        {
+          title: "ChatGPT Plus Completo 2025",
+          author: "Paulo Andrade",
+          rating: "⭐ 4.7 (1.538)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/6a00ff/ffffff?text=Curso+1"
+        },
+        {
+          title: "Domine ChatGPT e IA",
+          author: "Diego Davila",
+          rating: "⭐ 4.6 (1.000.000+)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/f56a00/ffffff?text=Curso+2"
+        },
+        {
+          title: "Marketing com ChatGPT",
+          author: "Diego Davila",
+          rating: "⭐ 4.5 (500.000+)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/2299ff/ffffff?text=Curso+3"
+        },
+        {
+          title: "Guia Completo ChatGPT 4",
+          author: "Matheus Starglehn",
+          rating: "⭐ 4.9 (700)",
+          price: "R$ 171,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/3333cc/ffffff?text=Curso+4"
+        },
+        {
+          title: "Curso Extra ChatGPT",
+          author: "Autor X",
+          rating: "⭐ 4.5 (200)",
+          price: "R$ 59,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/dd2222/ffffff?text=Curso+5"
+        }
+      ],
+      ai: [ 
+        {
+          title: "ChatGPT Plus Completo 2025",
+          author: "Paulo Andrade",
+          rating: "⭐ 4.7 (1.538)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/6a00ff/ffffff?text=Curso+1"
+        },
+        {
+          title: "Domine ChatGPT e IA",
+          author: "Diego Davila",
+          rating: "⭐ 4.6 (1.000.000+)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/f56a00/ffffff?text=Curso+2"
+        },
+        {
+          title: "Marketing com ChatGPT",
+          author: "Diego Davila",
+          rating: "⭐ 4.5 (500.000+)",
+          price: "R$ 79,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/2299ff/ffffff?text=Curso+3"
+        },
+        {
+          title: "Guia Completo ChatGPT 4",
+          author: "Matheus Starglehn",
+          rating: "⭐ 4.9 (700)",
+          price: "R$ 171,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/3333cc/ffffff?text=Curso+4"
+        },
+        {
+          title: "Curso Extra ChatGPT",
+          author: "Autor X",
+          rating: "⭐ 4.5 (200)",
+          price: "R$ 59,90",
+          badge: "",
+          image: "https://via.placeholder.com/300x140/dd2222/ffffff?text=Curso+5"
+        }
+       ]
+    };
+
+    const buttons = document.querySelectorAll(".category-btn");
+    const coursesGrid = document.getElementById("courses");
+    const leftBtn = document.getElementById("leftBtn");
+    const rightBtn = document.getElementById("rightBtn");
+
+    function loadCourses(category) {
+      coursesGrid.innerHTML = "";
+      const currentCourses = courses[category];
+
+      currentCourses.forEach(course => {
+        const card = document.createElement("div");
+        card.className = "course-card";
+        card.innerHTML = `
+          <img src="${course.image}" alt="">
+          <div class="course-content">
+            <div class="course-title">${course.title}</div>
+            <div class="course-author">${course.author}</div>
+            <div class="course-rating">${course.rating}</div>
+            <div class="course-price">${course.price}</div>
+            ${course.badge ? `<div class="badge">${course.badge}</div>` : ""}
+          </div>
+        `;
+        coursesGrid.appendChild(card);
+      });
+
+      // Mostrar setas apenas se tiver mais de 4 cursos
+      if (currentCourses.length > 4) {
+        leftBtn.style.display = "block";
+        rightBtn.style.display = "block";
+      } else {
+        leftBtn.style.display = "none";
+        rightBtn.style.display = "none";
+      }
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const category = btn.getAttribute("data-category");
+        loadCourses(category);
+      });
+    });
+
+    // Botões de navegação lateral
+    leftBtn.addEventListener("click", () => {
+      coursesGrid.scrollLeft -= 300;
+    });
+
+    rightBtn.addEventListener("click", () => {
+      coursesGrid.scrollLeft += 300;
+    });
+
+    // Carregar categoria inicial
+    loadCourses("chatgpt");
+  </script>
+  <script src="/script.js"></script>
+
+</body>
+</html>
